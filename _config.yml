@@ -1,0 +1,255 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 賾月境界奇譚
+subtitle: 'Esoteric Chronicles of the Lunar Frontier'
+description: '此間一切非真有之物～'
+keywords: blog yukikusa tarikko tarikkochan tarikko-chan scetayh scetaychan scetayh-chan
+author: 幸草_Tarikko-ScetayhChan
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://blog.tarikkochan.top
+permalink: :name/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - live2d-model-100700/**
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+#syntax_highlighter: highlight.js
+syntax_highlighter: false
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+  彩羽选集: caiyu_xuanji
+  青祚笔录选集: qingzuo_bilu_xuanji
+  地壳运动: diqiao_yundong
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-M-D
+time_format: H:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: shokax
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: 'git'
+  repo: 'git@github.com:scetayh/blog.tarikkochan.github.io.git'
+  branch: 'main'
+
+markdown:
+  render: # 渲染器设置
+    html: false # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer:
+    quotes: "“”‘’"
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 系主题必须设置成这样
+          tocClassName: "toc"
+          anchorClassName: "anchor"
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
+
+minify:
+  js:
+    enable: false # ShokaX 自带 esbuild 优化，不建议开启，其他主题建议开启
+    exclude: # 排除文件，接受 string[]，需符合 micromatch 格式
+  css:
+    enable: true # 开启 CSS 优化
+    options:
+      targets: ">= 0.5%" # browserslist 格式的 target
+    exclude: # 排除文件，接受 string[]，需符合 micromatch 格式
+  html:
+    minifier: html-minifier
+    enable: true # 开启 HTML 优化
+    options:
+      comments: false # 是否保留注释内容
+    exclude: # 排除文件，接受 string[]，需符合 micromatch 格式
+  image:
+    enable: false # 开启图片预处理和自动 WebP 化
+    options:
+      avif: false
+      webp: true # 预留配置项，现版本无作用
+      quality: 80 # 质量，支持1-100的整数、lossless或nearLossless
+      effort: 2 # CPU 工作量，0-6之间的整数(越低越快)
+      replaceSrc: false # 自动替换生成html中的本地图片链接为webp链接
+      # 对于使用 CI 工作流部署的用户，请注意本配置可能导致图片 404，如果出现请关闭
+      # 我们更建议使用 Service Worker 来在用户侧实现 replaceSrc 的功能，这将能够以一种侵入式更小的方式实现链接替换
+    exclude:
+
+feed:
+  limit: 20
+  order_by: "-date"
+  tag_dir: false
+  category_dir: false
+  rss:
+    enable: true
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/rss.ejs"
+    output: "rss.xml"
+  atom:
+    enable: true
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/atom.ejs"
+    output: "atom.xml"
+  jsonFeed:
+    enable: true
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
+    output: "feed.json"
+
+symbols_count_time: # 受不了一会儿繁中一会儿英文一会儿日文了，直接pnpm卸载
+  symbols: false # 虽然下方的awl设为2，但只能显示繁体中文，所以symbols不得已设为false
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 2 # 默认为4即JP，2为CN
+  wpm: 275
+  suffix: "mins."
+
+# hexo-oh-my-live2d 配置
+OhMyLive2d:
+  enable: true
+  CDN: https://unpkg.com/oh-my-live2d
+  option:
+    dockedPosition: 'left' # 模型停靠位置 默认值: 'right' 可选值: 'left' | 'right'
+    menus:
+      items: |
+        (defaultItems)=>{
+         return [
+           ...defaultItems,
+           {
+             id: 'github',
+             icon: 'github-fill',
+             title: '幸草_Tarikko-ScetayhChanのGitHub',
+             onClick: ()=>window.open('https://github.com/scetayh')
+           }
+         ]
+        }
+    mobileDisplay: true # 是否在移动端显示
+    models:
+      - path: /assets/live2d-model-100700/model.model3.json
+        mobilePosition: [48, 23] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        mobileScale: 0.1 # 移动端时模型的缩放比例 默认值: 0.1
+        mobileStageStyle: # 移动端时舞台的样式
+          width: 256 #180
+          height: 166
+        motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+        position: [48, 35] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        scale: 0.15 # 模型的缩放比例 默认值: 0.1
+        # showHitAreaFrames: false # 是否显示点击区域 默认值: false
+        stageStyle:
+          width: 384 # 250
+          height: 250
+    parentElement: document.body #为组件提供一个父元素，如果未指定则默认挂载到 body 中
+    primaryColor: 'var(--btn-bg)' # 主题色 支持变量
+    sayHello: false # 是否在初始化阶段打印项目信息
+    tips:
+      style:
+        width: 253
+        height: 132
+        left: calc(50% - 20px)
+        top: -100px
+      mobileStyle:
+        width: 198
+        height: 88
+        left: calc(50% - 30px)
+        top: -100px
+      idleTips:
+        interval: 15000
+        message:
+          - 我好想见你，我一直没能发现这份自己无从感觉到的想要见你的想法。
+          - 只要有那份回忆在，我就什么都做得到。
+          - 我啊，想要知道宇宙的一切哦。从构成开始，到底是由什么构成的呢，全部！总有一天会明白的吧？	
+          - 了解宇宙，就是在让人类进化哦。从某种意义上来说，这大概和破解传统唱片很像吧。
