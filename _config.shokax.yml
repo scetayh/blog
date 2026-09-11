@@ -87,7 +87,7 @@ auto_dark: # 自动亮/暗模式
 auto_scroll: false
 
 loader:
-  start: true # 进入页面时显示加载动画
+  start: false # 进入页面时显示加载动画
   switch: false # 切换页面时显示加载动画
 
 # 显示的动画(烟花)
