@@ -27,8 +27,8 @@ importers:
         specifier: ^0.25.12
         version: 0.25.12
       hana-img-viewer:
-        specifier: ^1.2.9
-        version: 1.2.9
+        specifier: ^5.2.0
+        version: 5.2.0(vue@3.5.42(typescript@5.9.3))
       hexo:
         specifier: ^7.3.0
         version: 7.3.0(chokidar@3.6.0)
@@ -1051,11 +1051,6 @@ packages:
 
   '@volar/typescript@2.4.28':
     resolution: {integrity: sha512-Ja6yvWrbis2QtN4ClAKreeUZPVYMARDYZl9LMEv1iQ1QdepB6wn0jTRxA9MftYmYa4DQ4k/DaSZpFPUfxl8giw==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
 
   '@vue/compiler-core@3.5.42':
     resolution: {integrity: sha512-2Ye1ilMtKXxl8qZUrQ5j0CdgenFp/HFQmta6rfRyfEsTG69L6Wk+tWuNoHYHMx9E8tF2Slvdg1FuwDvAXdy1LQ==}
@@ -1713,6 +1708,7 @@ packages:
   glob@11.1.0:
     resolution: {integrity: sha512-vuNwKSaKiqm7g0THUBu2x7ckSs3XJLXE+2ssL7/MfTGPLLcrJQ/4Uq1CjPTtO5cCIiRxqvN6Twy1qOwhL0Xjcw==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@13.0.6:
@@ -1721,7 +1717,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
@@ -1745,6 +1741,11 @@ packages:
 
   hana-img-viewer@1.2.9:
     resolution: {integrity: sha512-qOfw8MI0k+9Rchoby1j08iv72RHCg+rFavcifY0mW+/0OB1aXKSx3GGtO32EevCMLoBNXb0/zUBBTAGwyHzhpQ==}
+
+  hana-img-viewer@5.2.0:
+    resolution: {integrity: sha512-W7s02a/3peYK9K3bSwvKPbbZfrHINm9KnHVjgDxR1jc6oI3TpRmquaA8ziE3XPTQL94oV1MPR7BtQvKNuadylg==}
+    peerDependencies:
+      vue: ^3.5.0
 
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
@@ -2366,8 +2367,8 @@ packages:
   muggle-string@0.4.1:
     resolution: {integrity: sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==}
 
-  nanoid@3.3.19:
-    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
+  nanoid@3.3.18:
+    resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -4123,13 +4124,11 @@ snapshots:
 
   '@volar/source-map@2.4.28': {}
 
-  '@volar/typescript@2.4.28(typescript@5.9.3)':
+  '@volar/typescript@2.4.28':
     dependencies:
       '@volar/language-core': 2.4.28
       path-browserify: 1.0.1
       vscode-uri: 3.2.0
-    optionalDependencies:
-      typescript: 5.9.3
 
   '@vue/compiler-core@3.5.42':
     dependencies:
@@ -4869,6 +4868,10 @@ snapshots:
       crossws: 0.4.12(srvx@1.0.4)
 
   hana-img-viewer@1.2.9: {}
+
+  hana-img-viewer@5.2.0(vue@3.5.42(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.42(typescript@5.9.3)
 
   has-flag@4.0.0: {}
 
@@ -5636,7 +5639,7 @@ snapshots:
 
   muggle-string@0.4.1: {}
 
-  nanoid@3.3.19: {}
+  nanoid@3.3.18: {}
 
   negotiator@0.6.4: {}
 
@@ -5848,7 +5851,7 @@ snapshots:
 
   postcss@8.5.28:
     dependencies:
-      nanoid: 3.3.19
+      nanoid: 3.3.18
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -6391,7 +6394,7 @@ snapshots:
     dependencies:
       '@microsoft/api-extractor': 7.59.1
       '@rollup/pluginutils': 5.4.0
-      '@volar/typescript': 2.4.28(typescript@5.9.3)
+      '@volar/typescript': 2.4.28
       '@vue/language-core': 2.2.0(typescript@5.9.3)
       compare-versions: 6.1.1
       debug: 4.4.3(supports-color@8.1.1)
