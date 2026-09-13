@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@algolia/client-search':
-        specifier: ^5.57.0
-        version: 5.57.0
+        specifier: ^5.59.0
+        version: 5.59.0
       '@common.js/p-limit':
         specifier: ^6.1.0
         version: 6.1.0
@@ -149,8 +149,8 @@ packages:
     resolution: {integrity: sha512-otPWALs72KvmVuP0CN0DI6sqVx1jQWKi+/DgAiP8DysVMgiNlva3GDKTtAK6XVGlT08f4h32FNuL0yQODuCfKA==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/client-common@5.57.0':
-    resolution: {integrity: sha512-uqpGF3oXYsoCbQq5d7BzNrNTfIfuvJyGP1CKvSW27T9boUg7KOwyxsAw1AX0a3jSW2HrYEJ/NN+Z4MiGivbpeQ==}
+  '@algolia/client-common@5.59.0':
+    resolution: {integrity: sha512-PC8ipLOYFKRTfIUY1J3FJxS6ryzWziaXmIX9/sNMoUR8L+XhF7hX2QAeUI87YVl5zujvlYTSOb+HAIqKXDjyHQ==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/client-insights@5.34.1':
@@ -175,8 +175,8 @@ packages:
     resolution: {integrity: sha512-bt5hC9vvjaKvdvsgzfXJ42Sl3qjQqoi/FD8V7HOQgtNFhwSauZOlgLwFoUiw67sM+r7ehF7QDk5WRDgY7fAkIg==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/client-search@5.57.0':
-    resolution: {integrity: sha512-2TTPTTKSJmCptvhCm4Xf3bBYMqZni+Pgc2hVdqc4l9wsBpSJNVTVIKpnd10OubUgkGcmppVDj1XQqYaf6EnPSQ==}
+  '@algolia/client-search@5.59.0':
+    resolution: {integrity: sha512-fHnALZfbEnODczGk14Y/1YBRApp6UEpZUTexGcMUPzY7RDc7q4HN2Y6jh0KUG8Jo9B+q+wOoQEc3ziR0ErbuFg==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/events@4.0.1':
@@ -207,8 +207,8 @@ packages:
     resolution: {integrity: sha512-567LfFTc9VOiPtuySQohoqaWMeohYWbXK71aMSin+SLMgeKX7hz5LrVmkmMQj9udwWK6/mtHEYZGPYHSuXpLQg==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/requester-browser-xhr@5.57.0':
-    resolution: {integrity: sha512-PIPnPN7MP3fp2VAi01BVXhCWmD366ZB2Hkq5TlYKtThd4KxUtMmaaNDpFgVCTXtSIqWVZLJntOHRvxg/sIPd8Q==}
+  '@algolia/requester-browser-xhr@5.59.0':
+    resolution: {integrity: sha512-yb+4afX/zja8QwX0KmV4/ae2kyYkRknsE79CRusYS2U5D8qwn2wq0cn1x12f3tm3F3+5FgmDdbuGdQTuCLSKMQ==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/requester-common@4.20.0':
@@ -218,8 +218,8 @@ packages:
     resolution: {integrity: sha512-YRbygPgGBEik5U593JvyjgxFjcsyZMR25eIQxNHvSQumdAzt5A4E4Idw3yXnwhrmMdjML54ZXT7EAjnTjWy8Xw==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/requester-fetch@5.57.0':
-    resolution: {integrity: sha512-AX3RlOudXMdTwtwUqdAf5hAVLvXfOZZH1FZh6ALDdrhVLT0TtAIe48N6nYcWcTnwoTxK/wDIQqZ19IMjK8zJAA==}
+  '@algolia/requester-fetch@5.59.0':
+    resolution: {integrity: sha512-Lp52TmpA1QtNmdHzs505Xwf4tgII7RAapkDSF9AAtWIBETcGaTIaXci4Rd9nS6SdaWK1BWTSqAPp5wzh6UN3Ag==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/requester-node-http@4.20.0':
@@ -229,8 +229,8 @@ packages:
     resolution: {integrity: sha512-o0mqRYbS82Rt4DE02Od7RL6pNtV7oSxScPuIw8LW4aqO2V5eCF05Pry/SnUgcI/Vb2QCYC66hytBCqzyC/toZA==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/requester-node-http@5.57.0':
-    resolution: {integrity: sha512-cWZc1dKb7wy9/wPpwMtL1y89gK2G7y2A47Coa7zwf1ydtIeJm4+S+XxoQ2b/ZRiQnrC1YHavLjYUPDCdnT7Khg==}
+  '@algolia/requester-node-http@5.59.0':
+    resolution: {integrity: sha512-YYHLEs5rC6oRTFwT7bJaKBR9NSFzikeVHGAT1ffATmUQzR8XqyhHXjoieAUoR7fBU6I5cfy1FVeh5GoRgriuzA==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/transporter@4.20.0':
@@ -968,11 +968,6 @@ packages:
 
   '@volar/typescript@2.4.28':
     resolution: {integrity: sha512-Ja6yvWrbis2QtN4ClAKreeUZPVYMARDYZl9LMEv1iQ1QdepB6wn0jTRxA9MftYmYa4DQ4k/DaSZpFPUfxl8giw==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
 
   '@vue/compiler-core@3.5.41':
     resolution: {integrity: sha512-q0Xtv/F9w2YO/7htQhtiL+Ev2WCJbe5N2hc+XfgyKkEKqWpSxknmT8QOuGdEKNdjPq0c3F7rNpFkTo3Kfrm7pg==}
@@ -1622,11 +1617,12 @@ packages:
   glob@11.1.0:
     resolution: {integrity: sha512-vuNwKSaKiqm7g0THUBu2x7ckSs3XJLXE+2ssL7/MfTGPLLcrJQ/4Uq1CjPTtO5cCIiRxqvN6Twy1qOwhL0Xjcw==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
@@ -3141,7 +3137,7 @@ snapshots:
 
   '@algolia/client-common@5.34.1': {}
 
-  '@algolia/client-common@5.57.0': {}
+  '@algolia/client-common@5.59.0': {}
 
   '@algolia/client-insights@5.34.1':
     dependencies:
@@ -3183,12 +3179,12 @@ snapshots:
       '@algolia/requester-fetch': 5.34.1
       '@algolia/requester-node-http': 5.34.1
 
-  '@algolia/client-search@5.57.0':
+  '@algolia/client-search@5.59.0':
     dependencies:
-      '@algolia/client-common': 5.57.0
-      '@algolia/requester-browser-xhr': 5.57.0
-      '@algolia/requester-fetch': 5.57.0
-      '@algolia/requester-node-http': 5.57.0
+      '@algolia/client-common': 5.59.0
+      '@algolia/requester-browser-xhr': 5.59.0
+      '@algolia/requester-fetch': 5.59.0
+      '@algolia/requester-node-http': 5.59.0
 
   '@algolia/events@4.0.1': {}
 
@@ -3227,9 +3223,9 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.34.1
 
-  '@algolia/requester-browser-xhr@5.57.0':
+  '@algolia/requester-browser-xhr@5.59.0':
     dependencies:
-      '@algolia/client-common': 5.57.0
+      '@algolia/client-common': 5.59.0
 
   '@algolia/requester-common@4.20.0': {}
 
@@ -3237,9 +3233,9 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.34.1
 
-  '@algolia/requester-fetch@5.57.0':
+  '@algolia/requester-fetch@5.59.0':
     dependencies:
-      '@algolia/client-common': 5.57.0
+      '@algolia/client-common': 5.59.0
 
   '@algolia/requester-node-http@4.20.0':
     dependencies:
@@ -3249,9 +3245,9 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.34.1
 
-  '@algolia/requester-node-http@5.57.0':
+  '@algolia/requester-node-http@5.59.0':
     dependencies:
-      '@algolia/client-common': 5.57.0
+      '@algolia/client-common': 5.59.0
 
   '@algolia/transporter@4.20.0':
     dependencies:
@@ -3892,13 +3888,11 @@ snapshots:
 
   '@volar/source-map@2.4.28': {}
 
-  '@volar/typescript@2.4.28(typescript@5.9.3)':
+  '@volar/typescript@2.4.28':
     dependencies:
       '@volar/language-core': 2.4.28
       path-browserify: 1.0.1
       vscode-uri: 3.1.0
-    optionalDependencies:
-      typescript: 5.9.3
 
   '@vue/compiler-core@3.5.41':
     dependencies:
@@ -4801,7 +4795,7 @@ snapshots:
 
   hexo-theme-shokax@0.5.4(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(chalk@4.1.2)(chokidar@3.6.0)(rolldown@1.2.5)(supports-color@8.1.1)(typescript@5.9.3)(vite@8.2.2(esbuild@0.25.12)(jiti@2.7.0)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
-      '@algolia/client-search': 5.57.0
+      '@algolia/client-search': 5.59.0
       '@common.js/p-limit': 6.1.0
       '@waline/client': 3.15.2(typescript@5.9.3)
       algoliasearch: 5.34.1
@@ -6124,7 +6118,7 @@ snapshots:
     dependencies:
       '@microsoft/api-extractor': 7.59.0
       '@rollup/pluginutils': 5.4.0
-      '@volar/typescript': 2.4.28(typescript@5.9.3)
+      '@volar/typescript': 2.4.28
       '@vue/language-core': 2.2.0(typescript@5.9.3)
       compare-versions: 6.1.1
       debug: 4.4.3(supports-color@8.1.1)
