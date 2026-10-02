@@ -108,8 +108,8 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8
       twikoo:
-        specifier: ^1.7.22
-        version: 1.7.22
+        specifier: ^2.0.12
+        version: 2.0.12
       vue:
         specifier: ^3.5.42
         version: 3.5.42(typescript@5.9.3)
@@ -909,6 +909,9 @@ packages:
 
   '@swc/helpers@0.5.18':
     resolution: {integrity: sha512-TXTnIcNJQEKwThMMqBXsZ4VGAza6bvN4pa41Rkqoio6QBKMvo+5lexeTMScGCIxtzgQJzElcvIltani+adC5PQ==}
+
+  '@twikoojs/shared@2.0.12':
+    resolution: {integrity: sha512-b2A4ch51k+IaD4EfOWXjlQcYsGz5u8oM/ncWypkr/6NakYbjnziqPvdQs5R3AH++w/9pwnD7CW4SggGTDCM2ig==}
 
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
@@ -1713,6 +1716,7 @@ packages:
   glob@11.1.0:
     resolution: {integrity: sha512-vuNwKSaKiqm7g0THUBu2x7ckSs3XJLXE+2ssL7/MfTGPLLcrJQ/4Uq1CjPTtO5cCIiRxqvN6Twy1qOwhL0Xjcw==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@13.0.6:
@@ -1721,7 +1725,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
@@ -2944,6 +2948,9 @@ packages:
   twikoo@1.7.22:
     resolution: {integrity: sha512-g9mRhK6Kg11G4FIc7srpG9W2C6zgQyFERDOqqLGxXhVHqlTZUOxkWSpTjEI+KxeFsvinG1TTtQe2IDyX2VBUpA==}
 
+  twikoo@2.0.12:
+    resolution: {integrity: sha512-HmWBHgtwPRj9Zgja8QyNcLrY40tyWdajaPrltyMiMvtzd59TojuXvL5fyOBB5Wn7gfLNlyM5HD00SA+tipCY2A==}
+
   type-level-regexp@0.1.17:
     resolution: {integrity: sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg==}
 
@@ -3887,6 +3894,8 @@ snapshots:
   '@swc/helpers@0.5.18':
     dependencies:
       tslib: 2.8.1
+
+  '@twikoojs/shared@2.0.12': {}
 
   '@tybys/wasm-util@0.10.3':
     dependencies:
@@ -6266,6 +6275,10 @@ snapshots:
   tslib@2.8.1: {}
 
   twikoo@1.7.22: {}
+
+  twikoo@2.0.12:
+    dependencies:
+      '@twikoojs/shared': 2.0.12
 
   type-level-regexp@0.1.17: {}
 
