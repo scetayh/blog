@@ -108,8 +108,8 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8
       twikoo:
-        specifier: ^1.7.22
-        version: 1.7.22
+        specifier: ^2.0.13
+        version: 2.0.13
       vue:
         specifier: ^3.5.42
         version: 3.5.42(typescript@5.9.3)
@@ -909,6 +909,9 @@ packages:
 
   '@swc/helpers@0.5.18':
     resolution: {integrity: sha512-TXTnIcNJQEKwThMMqBXsZ4VGAza6bvN4pa41Rkqoio6QBKMvo+5lexeTMScGCIxtzgQJzElcvIltani+adC5PQ==}
+
+  '@twikoojs/shared@2.0.13':
+    resolution: {integrity: sha512-Snxizz8/I4VTk71OepqXXzYo5Lu9vrTzP1e3DTBR14aZ1r0w6QC52DT2XhXX1oZQCPssR11GQcrYBermqW5Bsg==}
 
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
@@ -2944,6 +2947,9 @@ packages:
   twikoo@1.7.22:
     resolution: {integrity: sha512-g9mRhK6Kg11G4FIc7srpG9W2C6zgQyFERDOqqLGxXhVHqlTZUOxkWSpTjEI+KxeFsvinG1TTtQe2IDyX2VBUpA==}
 
+  twikoo@2.0.13:
+    resolution: {integrity: sha512-1hs4U47z2tZtqjj4dayU8t0axg+LP8prJOOjw1Z0zUdxtnN10oA4NAcl4etZhg6uWTXEQnN+UjXLr45zSWm1jQ==}
+
   type-level-regexp@0.1.17:
     resolution: {integrity: sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg==}
 
@@ -3887,6 +3893,8 @@ snapshots:
   '@swc/helpers@0.5.18':
     dependencies:
       tslib: 2.8.1
+
+  '@twikoojs/shared@2.0.13': {}
 
   '@tybys/wasm-util@0.10.3':
     dependencies:
@@ -6266,6 +6274,10 @@ snapshots:
   tslib@2.8.1: {}
 
   twikoo@1.7.22: {}
+
+  twikoo@2.0.13:
+    dependencies:
+      '@twikoojs/shared': 2.0.13
 
   type-level-regexp@0.1.17: {}
 
