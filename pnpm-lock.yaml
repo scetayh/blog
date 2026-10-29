@@ -87,8 +87,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       instantsearch.js:
-        specifier: ^4.115.0
-        version: 4.115.0(algoliasearch@5.34.1)
+        specifier: ^4.121.0
+        version: 4.121.0(algoliasearch@5.34.1)
       js-yaml:
         specifier: ^4.3.2
         version: 4.3.2
@@ -1198,8 +1198,8 @@ packages:
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
 
-  algoliasearch-helper@3.29.3:
-    resolution: {integrity: sha512-gVOMbbPVrCO3Xs+B+BLAIGFqIQow6qHMTYCEeBqLQB9m4ZmKUqMwkEumlal2iyyezHEd4Y0FvFTLbCRutCutIQ==}
+  algoliasearch-helper@3.30.1:
+    resolution: {integrity: sha512-AmqAtGFUZSaOn64yt9WjqvT00iXkXFjvd18OyzoPY0G1vOWy8drhwHSlRznpwVCAwRUR/sVdkl9ZXgmu/voDBg==}
     peerDependencies:
       algoliasearch: '>= 3.1 < 6'
 
@@ -1930,11 +1930,11 @@ packages:
   ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
-  instantsearch-ui-components@0.39.0:
-    resolution: {integrity: sha512-hoBGhSzPAdqCFq0Uzv7ltvMD9MFVcAsJ394icMoAv8v7GWERBd8mOO+7fD8LNs0nBAIinHp3HjuqXMl9cJYbvw==}
+  instantsearch-ui-components@0.44.0:
+    resolution: {integrity: sha512-nOk8BYrcuZuCo9J1qkh4vu6dqYpJwduwXwrk4ZO4GTWSqyI25bKhCH2+N0zmzd6Mb3JUSqFNMacHScgRfrtWUg==}
 
-  instantsearch.js@4.115.0:
-    resolution: {integrity: sha512-QlnQ+BmpWfLuwTc2DL+2IvAbSglREsHeXtVAFpbj74VueMcK8mXznbTTxO9fgzM3Jewe3UjrQqKf8L59YSH4mw==}
+  instantsearch.js@4.121.0:
+    resolution: {integrity: sha512-gpdpXdDahtX5beRTndM/mBBSLgU+z+5VcPM6Fcof7zLCM24UPlkjPSIu24ybqqQl4lDtigEwocu+p9uNtjYY3Q==}
     peerDependencies:
       algoliasearch: '>= 3.1 < 6'
 
@@ -2211,15 +2211,6 @@ packages:
   markdown-it@14.3.1:
     resolution: {integrity: sha512-4Ej49aYTDFIQ+uBkfX8GBvJGccoARxxPep+7aWTs55ozbjQJpW9M26Fe53vnGgvLeVzva/amzjQQaQu9w0vMhA==}
     hasBin: true
-
-  markdown-to-jsx@7.7.17:
-    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
-    engines: {node: '>= 10'}
-    peerDependencies:
-      react: '>= 0.14.0'
-    peerDependenciesMeta:
-      react:
-        optional: true
 
   marked-highlight@2.2.4:
     resolution: {integrity: sha512-PZxisNMJDduSjc0q6uvjsnqqHCXc9s0eyzxDO9sB1eNGJnd/H1/Fu+z6g/liC1dfJdFW4SftMwMlLvsBhUPrqQ==}
@@ -4306,7 +4297,7 @@ snapshots:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
-  algoliasearch-helper@3.29.3(algoliasearch@5.34.1):
+  algoliasearch-helper@3.30.1(algoliasearch@5.34.1):
     dependencies:
       '@algolia/events': 4.0.1
       algoliasearch: 5.34.1
@@ -5065,7 +5056,7 @@ snapshots:
       hexo-renderer-aether: 0.0.6(chokidar@3.6.0)
       hexo-renderer-pug: 3.0.0
       hexo-util: 3.3.0
-      instantsearch.js: 4.115.0(algoliasearch@5.34.1)
+      instantsearch.js: 4.121.0(algoliasearch@5.34.1)
       js-yaml: 4.3.2
       katex: 0.16.47
       mouse-firework: 0.1.1
@@ -5201,14 +5192,11 @@ snapshots:
 
   ini@1.3.8: {}
 
-  instantsearch-ui-components@0.39.0(react@19.3.0):
+  instantsearch-ui-components@0.44.0:
     dependencies:
       '@swc/helpers': 0.5.18
-      markdown-to-jsx: 7.7.17(react@19.3.0)
-    transitivePeerDependencies:
-      - react
 
-  instantsearch.js@4.115.0(algoliasearch@5.34.1):
+  instantsearch.js@4.121.0(algoliasearch@5.34.1):
     dependencies:
       '@algolia/events': 4.0.1
       '@swc/helpers': 0.5.18
@@ -5217,10 +5205,10 @@ snapshots:
       '@types/hogan.js': 3.0.5
       '@types/qs': 6.15.1
       algoliasearch: 5.34.1
-      algoliasearch-helper: 3.29.3(algoliasearch@5.34.1)
+      algoliasearch-helper: 3.30.1(algoliasearch@5.34.1)
       hogan.js: 3.0.2
       htm: 3.1.1
-      instantsearch-ui-components: 0.39.0(react@19.3.0)
+      instantsearch-ui-components: 0.44.0
       preact: 10.29.8
       qs: 6.16.0
       react: 19.3.0
@@ -5497,10 +5485,6 @@ snapshots:
       mdurl: 2.1.0
       punycode.js: 2.3.1
       uc.micro: 2.1.0
-
-  markdown-to-jsx@7.7.17(react@19.3.0):
-    optionalDependencies:
-      react: 19.3.0
 
   marked-highlight@2.2.4(marked@18.0.12):
     dependencies:
